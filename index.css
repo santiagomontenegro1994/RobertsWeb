@@ -42,6 +42,7 @@ nav ul{
     background: rgba(11, 15, 85, 0.9);
     top: 80px;
     left: -100%;
+    /* le pongo left -100 para que se oculte y solo salga si se clickea el check*/
     text-align: center;
     transition: all .5s;
 }
@@ -73,10 +74,16 @@ header a:hover{
 #check{
     display: none;
 }
+/* funcion que si el check se clickea se lama a ul y le pongo left: 0 para que aparezca en pantalla*/
 #check:checked ~ul{
     left: 0;
 }
-
+/* solo puse este seccion para probar como queda el nav*/
+section{
+    background-color: #fff;
+    width: 100%;
+    padding: 200px 30px;
+}
 
 
 
@@ -86,11 +93,11 @@ header a:hover{
         width: 100%;
     }
     .enlace{
-        padding-left: 20px;
+        padding: 20px 12px;
     }
     nav ul{
         float: right;
-        margin-right: 20px;
+        margin-right: 12px;
         width: 100%;
         height: 100vh;
         background: none;
@@ -101,7 +108,7 @@ header a:hover{
     }
     header a{
         font-size: 13px;
-        padding: 7px 3px;
+        padding: 7px 2px;
     }
     nav ul li{
         display: inline-block;
@@ -118,5 +125,6 @@ header a:hover{
     }
     .checkbtn{
         display: none;
+        /*al ser la pantalla de mas de 720 px se esconde el menu de barras*/
     }
 }
