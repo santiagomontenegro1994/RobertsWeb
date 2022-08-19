@@ -1,129 +1,179 @@
-*{
-    box-sizing: border box;
+:root {
+    --header-color1: #470b2e;
+    --baground-ligh: #fff;
+    --baground-dark: #000;
+}
+
+* {
+    margin: 0;
     padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 90px 20px 0;
+    background: var(--baground-ligh);
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    background-color: #020A19;
+.dark_mode {
+    background: var(--baground-dark);
+    color: #fff;
 }
 
-.container{
-    max-width: 1400px;
+header {
+    background: var(--header-color1);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: ;
+    align-items: center;
+    max-width: 992px;
     margin: auto;
 }
 
-nav{
-    background: #020A19;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-}
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-}
-.logo{
-    height: 40px;
-    padding-left: 20px;
-}
-nav ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgba(11, 15, 85, 0.9);
-    top: 80px;
-    left: -100%;
-    /* le pongo left -100 para que se oculte y solo salga si se clickea el check*/
-    text-align: center;
-    transition: all .5s;
-}
-nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;  
-}
-header a{
-    font-size: 20px;
-    font-weight: bold;
-    color: #3DA4FD;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-header a:hover{
-    color:rgb(25, 25, 150);
-}
-.checkbtn{
-    font-size: 30px;
+.nav-menu-link {
     color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: block;
+    text-decoration: none;
+    padding: 8px 12px;
 }
-#check{
+
+.logo {
+    width: 10em;
+    margin: 0 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu {
+    font-size: 18px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    max-width: max-content;
+}
+
+.nav-menu-link:hover {
+    background: #fff;
+    border-radius: 5px;
+    color: var(--header-color1);
+    transition: 0.5s;
+}
+
+.btn {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
     display: none;
 }
-/* funcion que si el check se clickea se lama a ul y le pongo left: 0 para que aparezca en pantalla*/
-#check:checked ~ul{
-    left: 0;
+
+#checkbox {
+    display: none;
 }
-/* solo puse este seccion para probar como queda el nav*/
-section{
+
+.toggler {
+    display: block;
+    width: 60px;
+    height: 31px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ball, .sun, .moon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ball {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
     background-color: #fff;
-    padding: 200px 30px;
+    border-radius: 50%;
+    left: 1px;
+    z-index: 10;
+    transition: transform .5s ease-in-out;
 }
 
+.sun {
+    left: 5px;
+    color: #fff;
+}
 
+.moon {
+    right: 5px;
+    color: #fff;
+}
 
-@media (min-width: 720px){
-    header{
-        position: fixed;
-        width: 100%;
+#checkbox:checked + .ball {
+    transform: translate(29px, -50%);
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
     }
-    .enlace{
-        padding: 20px 12px;
-    }
-    nav ul{
-        float: right;
-        margin-right: 12px;
-        width: 100%;
-        height: 100vh;
-        background: none;
-        top: 0px;
-        left: 0;
-        text-align: right;
-        transition: all 0.0s;
-    }
-    header a{
-        font-size: 13px;
-        padding: 7px 2px;
-    }
-    nav ul li{
-        display: inline-block;
-        margin-top: 0;
+
+    .menu {
+        flex-direction: column;
         margin-right: 20px;
-        line-height: 80px;
-          
-     }
-     #logo{
-        font-size: 3em;
-     }
-    #Habilidades .container{
-        flex-direction: row; 
+        background: var(--header-color1);
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        left: 100%;
+        transition: 0.5s;
     }
-    .checkbtn{
-        display: none;
-        /*al ser la pantalla de mas de 720 px se esconde el menu de barras*/
+
+    .nav-menu {
+        font-size: 1.5em;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .nav-menu-link:hover {
+        background: none;
+        color: #dfeb35;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .menu_visible {
+        left: 0;
     }
 }

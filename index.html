@@ -5,29 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roberts</title>
-    <script src="https://kit.fontawesome.com/fce69a98ea.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d53a6ada4.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body dark_mode">
     <header>
-        <div class="container">
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <a href="#" class="enlace">
-                    <img src="media/logo.png" alt="" class="logo">
-                </a>
-                <ul>
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#Quienes-somos">Quienes Somos</a></li>
-                    <li><a href="#Productos">Productos</a></li>
-                    <li><a href="#Donde-estamos">Donde Estamos</a></li>
-                    <li><a href="#Contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">
+                <a href=""><img src="Logo Roberts.png" alt="Logo"></a>
+            </div>
+            <label for="checkbox" class="toggler">
+                <input type="checkbox" id="checkbox" class="dark">
+                <span class="ball"></span>
+                <i class="fa-solid fa-sun sun"></i>
+                <i class="fa-solid fa-moon moon"></i>
+            </label>
+            <button class="btn"><i class="fa-solid fa-bars"></i></button>
+            <ul class="menu">
+                <li class="nav-menu">
+                    <a href="#Inicio" class="nav-menu-link">Inicio</a>
+                </li>
+                <li class="nav-menu">
+                    <a href="#Quienes-somos" class="nav-menu-link">Quienes Somos</a>
+                </li>
+                <li class="nav-menu">
+                    <a href="#Productos" class="nav-menu-link">Productos</a>
+                </li>
+                <li class="nav-menu">
+                    <a href="#Donde-estamos" class="nav-menu-link">Donde Estamos</a>
+                </li>
+                <li class="nav-menu">
+                    <a href="#Contacto" class="nav-menu-link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <section id="Inicio">
         <div class="container">
@@ -35,34 +49,30 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione doloribus, nobis vitae magni maiores sequi reiciendis, ad vero porro ab adipisci aut. Placeat laborum fugiat dolorem quas ut minima dolore?</p>
     </div>
     </section>
-
     <section id="Quienes-somos">
         <div class="container">
             <h2>Quienes Somos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione doloribus, nobis vitae magni maiores sequi reiciendis, ad vero porro ab adipisci aut. Placeat laborum fugiat dolorem quas ut minima dolore?</p>
     </div>
     </section>
-
     <section id="Productos">
         <div class="container">
             <h2>Productos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione doloribus, nobis vitae magni maiores sequi reiciendis, ad vero porro ab adipisci aut. Placeat laborum fugiat dolorem quas ut minima dolore?</p>
     </div>
     </section>
-
     <section id="Donde-estamos">
         <div class="container">
             <h2>Donde Estamos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione doloribus, nobis vitae magni maiores sequi reiciendis, ad vero porro ab adipisci aut. Placeat laborum fugiat dolorem quas ut minima dolore?</p>
     </div>
     </section>
-
     <section id="Contacto">
         <div class="container">
             <h2>Contacto</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione doloribus, nobis vitae magni maiores sequi reiciendis, ad vero porro ab adipisci aut. Placeat laborum fugiat dolorem quas ut minima dolore?</p>
     </div>
     </section>
-    
+    <script defer src="Index.js"></script>
 </body>
 </html>
