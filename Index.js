@@ -11,3 +11,12 @@ const body = document.querySelector(".body")
 dark.addEventListener("click", () => {
     body.classList.toggle("dark_mode")
 })
+
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+}, 3000);
