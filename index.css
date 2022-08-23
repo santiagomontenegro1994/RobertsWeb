@@ -278,6 +278,55 @@ section {
     background: #303030;
 }
 
+/*CSS de la parte de contacto*/
+.contacto .container{
+    text-align: center;
+}
+
+form{
+    width: 90vw;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    
+}
+
+input, textarea{
+    width: 100%;
+    margin-top: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    background-color: rgba(250,250,250,0.1);
+    color: #fff; 
+    border-radius: 5px; 
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#botonContacto{
+    background-color:#dfeb35;
+    color: #020A19;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+#botonContacto:hover{
+    cursor: pointer;
+}
+
+#Contacto i{
+    color: #dfeb35;
+    font-size: 3em;
+    margin: 12px;
+}
+
 @media (max-width: 768px) {
     body {
         padding-top: 70px;
