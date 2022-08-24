@@ -149,11 +149,15 @@ main {
 }
 
 h2 {
-    margin-top: 100px;
-    font-size: 5em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 3em;
     text-align: center;
     color: #dfeb35;
     font-family: 'Bebas Neue', cursive;
+}
+#titulo{
+    margin-top: 20px;
 }
 
 section {
@@ -164,7 +168,10 @@ section {
     text-align: center;
     justify-content: center;
 }
-
+.banners{
+    display: flex;
+    align-items: flex-start;
+}
 .slider {
     width: 80vw;
     height: 50vh;
@@ -305,7 +312,7 @@ form{
 
 input, textarea{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 7px;
     box-sizing: border-box;
     font-size: 17px;
