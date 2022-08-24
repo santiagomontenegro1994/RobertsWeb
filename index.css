@@ -8,12 +8,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*border: solid 2px red;*/
 }
 
 body {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 90px 20px 0;
     background: var(--baground-ligh);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
 }
 
 .dark_mode {
@@ -276,6 +282,11 @@ section {
 
 ::-webkit-scrollbar-track {
     background: #303030;
+}
+/*CSS de la parte de donde estamos*/
+#Donde-estamos{
+    flex-direction: column;
+    align-items: center;
 }
 
 /*CSS de la parte de contacto*/
