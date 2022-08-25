@@ -175,7 +175,7 @@ section {
 }
 .slider {
     width: 80vw;
-    height: 50vh;
+    height: 70vh;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: -10px 10px 70px 10px #3f0071;
@@ -198,13 +198,13 @@ section {
 
 .slide img {
     width: 80vw;
-    height: 50vh;
+    height: 70vh;
     object-fit: cover;
 }
 
 .navigation-manual {
     position: absolute;
-    margin-top: 45vh;
+    margin-top: 65vh;
     width: 80vw;
     display: flex;
     justify-content: center;
@@ -247,7 +247,7 @@ section {
     display: flex;
     width: 80vw;
     justify-content: center;
-    margin-top: 45vh;
+    margin-top: 65vh;
 }
 
 .navigation-auto div:not(:last-child) {
