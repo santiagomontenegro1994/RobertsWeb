@@ -57,7 +57,7 @@ nav {
 
 .logo {
     width: 10em;
-    margin: 0 20px;
+    margin: 0 50px;
 }
 
 img {
@@ -68,6 +68,8 @@ img {
     display: flex;
     margin-right: 40px;
     list-style: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-menu {
@@ -145,17 +147,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 h2 {
-    margin-top: 50px;
-    margin-bottom: 20px;
     font-size: 3em;
     text-align: center;
     color: #dfeb35;
     font-family: 'Bebas Neue', cursive;
 }
+
 #titulo{
     margin-top: 20px;
 }
@@ -203,8 +204,8 @@ section {
 
 .navigation-manual {
     position: absolute;
+    margin-top: 45vh;
     width: 80vw;
-    margin-top: -40px;
     display: flex;
     justify-content: center;
 }
@@ -215,7 +216,6 @@ section {
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-    
 }
 
 .manual-btn:not(:last-child) {
@@ -247,7 +247,7 @@ section {
     display: flex;
     width: 80vw;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 45vh;
 }
 
 .navigation-auto div:not(:last-child) {
@@ -299,10 +299,12 @@ section {
 /*CSS de la parte de contacto*/
 .contacto .container{
     text-align: center;
+    width: 100%;
 }
 
 form{
-    width: 90vw;
+    /*se rompia con el viewportwidth */
+    width: 90%;
     margin: auto;
     padding: 10px 20px;
     box-sizing: border-box;
