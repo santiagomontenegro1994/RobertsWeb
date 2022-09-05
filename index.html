@@ -4,27 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roberts</title>
-    <link rel="stylesheet" href="Index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Imprenta Roberts</title>
     <script src="https://kit.fontawesome.com/0d53a6ada4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Logo.ico" type="image/x-icon">
 </head>
-<body class="body dark_mode">
-
+<body>
+    <!--parte de la barra de nav-->
     <header>
         <nav>
             <div class="logo">
-                <a href=""><img src="media/Logo Roberts.png"  alt="Logo"></a>
+                <a href=""><img src="img/Logo Roberts.png"  alt="Logo"></a>
             </div>
-            <label for="checkbox" class="toggler">
-                <input type="checkbox" id="checkbox" class="dark">
-                <span class="ball"></span>
-                <i class="fa-solid fa-sun sun"></i>
-                <i class="fa-solid fa-moon moon"></i>
-            </label>
             <button class="btn" name="nav list"><i class="fa-solid fa-bars"></i></button>
             <ul class="menu">
                 <li class="nav-menu">
@@ -45,11 +36,12 @@
             </ul>
         </nav>
     </header>
-    <main id="Inicio">
-        <section class="banners">
+    <main>
+        <!-- Inicio -->
+        <section class="banners" id="Inicio">
+            <h1>IMPRENTA ROBERTS</h1>
             <div class="slider">
-                <!-- prueba para la animacion de imagenes -->
-                <!-- agregue todo en el slides asi se ajusta todo en la pantalla-->
+                <!-- imagenes slides -->
                 <div class="slides">
                     <input type="radio" name="radio-btn" id="radio1">
                     <input type="radio" name="radio-btn" id="radio2">
@@ -82,91 +74,95 @@
                 </div>
             </div>
         </section>
-    </main>
-    <section id="Quienes-somos">
-        <div class="container">
-            <h2>Quienes Somos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione doloribus, nobis vitae magni maiores sequi reiciendis, ad vero porro ab adipisci aut. Placeat laborum fugiat dolorem quas ut minima dolore?</p>
-    </div>
-    </section>
-    <section id="Productos">
-        <h2>Productos</h2>
-        <div class="container">
-            <div class="card">
-                <div class="front">
-                    <a href=""><img src="media/Tarjeta.jpg"  alt=""></a>  
+        <!-- Quienes Somos -->
+        <section id="Quienes-somos">
+            <div class="container">
+                <h2>Quienes Somos</h2>
+                <p>Somos la Imprenta con mas 25 años de experiencia</p>
+            </div>
+        </section>
+        <!-- Productos -->
+        <section id="Productos">
+            <h2>Productos</h2>
+            <div class="container">
+                <div class="card">
+                    <div class="front">
+                        <a href=""><img src="img/Tarjeta.jpg"  alt=""></a>  
+                    </div>
+                    <div class="back">
+                        <h4>Tarjetas Personales</h4>
+                    </div>
                 </div>
-                <div class="back">
-                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum velit rem, tenetur, distinctio modi facilis veritatis debitis tempore quae voluptas animi delectus. Nam ea perferendis iure nemo vero veritatis.</h1>  
+                <div class="card">
+                    <div class="front">
+                        <a href=""><img src="img/Volante.jpg"  alt=""></a>  
+                    </div>
+                    <div class="back">
+                        <h4>Volantes</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <a href=""><img src="img/Talonarios.jpg"  alt=""></a>  
+                    </div>
+                    <div class="back">
+                        <h4>Talonarios</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <a href=""><img src="img/1553497976_B3su.jpg"  alt=""></a>  
+                    </div>
+                    <div class="back">
+                        <h4>Vinilos</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <a href=""><img src="img/Sublimacion.jpg"  alt=""></a>  
+                    </div>
+                    <div class="back">
+                        <h4>Sublimacion</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                        <a href=""><img src="img/Lona.jpg"  alt=""></a>  
+                    </div>
+                    <div class="back">
+                        <h4>Lonas</h4>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="front">
-                    <a href=""><img src="media/Volante.jpg"  alt=""></a>  
-                </div>
-                <div class="back">
-                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum velit rem, tenetur, distinctio modi facilis veritatis debitis tempore quae voluptas animi delectus. Nam ea perferendis iure nemo vero veritatis.</h1>  
-                </div>
-            </div>
-            <div class="card">
-                <div class="front">
-                    <a href=""><img src="media/Talonarios.jpg"  alt=""></a>  
-                </div>
-                <div class="back">
-                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum velit rem, tenetur, distinctio modi facilis veritatis debitis tempore quae voluptas animi delectus. Nam ea perferendis iure nemo vero veritatis.</h1>  
-                </div>
-            </div>
-            <div class="card">
-                <div class="front">
-                    <a href=""><img src="media/Talonarios.jpg"  alt=""></a>  
-                </div>
-                <div class="back">
-                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum velit rem, tenetur, distinctio modi facilis veritatis debitis tempore quae voluptas animi delectus. Nam ea perferendis iure nemo vero veritatis.</h1>  
-                </div>
-            </div>
-            <div class="card">
-                <div class="front">
-                    <a href=""><img src="media/Talonarios.jpg"  alt=""></a>  
-                </div>
-                <div class="back">
-                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum velit rem, tenetur, distinctio modi facilis veritatis debitis tempore quae voluptas animi delectus. Nam ea perferendis iure nemo vero veritatis.</h1>  
-                </div>
-            </div>
-            <div class="card">
-                <div class="front">
-                    <a href=""><img src="media/Talonarios.jpg"  alt=""></a>  
-                </div>
-                <div class="back">
-                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolorum velit rem, tenetur, distinctio modi facilis veritatis debitis tempore quae voluptas animi delectus. Nam ea perferendis iure nemo vero veritatis.</h1>  
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="Donde-estamos">
+        </section>
+        <!-- Donde Estamos -->
+        <section id="Donde-estamos">
             <h2>Donde Estamos</h2>     
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.305272310927!2d-64.29984738255615!3d-31.295306699999973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329dfb1f472671%3A0x57444c8bce4ccc36!2sRoberts%20Imprenta!5e0!3m2!1ses!2sar!4v1661363986433!5m2!1ses!2sar" width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
-    </section>
-    <section id="Contacto">
-        <div class="container">
-            <h2>Contacto</h2>
-                <form action="">
-                    <input type="text" name="Nombre" placeholder="Nombre">
-                    <input type="text" name="Correo" placeholder="Correo">
-                    <input type="text" name="Telefono" placeholder="Telefono">
-                    <textarea name="Mensaje" placeholder="Escriba aqui su mensaje"></textarea>
-                    <input type="button" value="Enviar" id="botonContacto">
-                </form>
-                <a href="https://github.com/santiagomontenegro1994" target="_blank">
-                    <i class="fa-brands fa-square-facebook"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/santiagomontenegro1994/" target="_blank">
-                    <i class="fa-brands fa-square-instagram"></i>
-                </a> 
-                <a href="https://www.linkedin.com/in/santiagomontenegro1994/" target="_blank">
-                    <i class="fa-brands fa-square-whatsapp"></i>
-                </a>       
-        </div>
-    </section>
-    <script defer src="Index.js"></script>
+        </section>
+        <!-- Contacto -->
+        <section id="Contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                    <form action="">
+                        <input type="text" name="Nombre" placeholder="Nombre">
+                        <input type="email" name="Correo" placeholder="Correo">
+                        <input type="tel" name="Telefono" placeholder="Telefono">
+                        <textarea name="Mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+                        <input type="button" value="Enviar" id="botonContacto">
+                    </form>
+                    <a href="https://github.com/santiagomontenegro1994" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/santiagomontenegro1994/" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a> 
+                    <a href="https://www.linkedin.com/in/santiagomontenegro1994/" target="_blank">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>       
+            </div>
+        </section>
+    </main>
+    <script defer src="index.js"></script>
 </body>
 </html>

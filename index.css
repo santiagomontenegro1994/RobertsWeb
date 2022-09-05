@@ -1,8 +1,14 @@
+/* Aqui aplicamos las variables de los colores */
 :root {
-    --header-color1: #3f0071;
-    --baground-ligh: #fff;
-    --baground-dark: #0c0717;
+    --color-principal: hsl(300, 100%, 9%);
+    --color-menuresponsive: hsl(300, 50%, 10%);
+    --color-detail: hsl(313, 100%, 28%);
+    --color-title: hsl(61, 100%, 50%);
+    --color-text: hsl(0, 0%, 100%);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -12,29 +18,24 @@
 }
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    padding: 90px 20px 0;
-    background: var(--baground-ligh);
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    background-image: url(img/9e8d5b3b19a1a55a77ba672d93608737.png);
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
 }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
-
-.dark_mode {
-    background: var(--baground-dark);
-    color: #fff;
-}
-
+/* configuraciones del nav */
 header {
-    background: var(--header-color1);
+    background: var(--color-principal);
     height: 80px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
+    border-bottom: 1px solid var(--color-detail);
 }
 
 nav {
@@ -46,7 +47,7 @@ nav {
 }
 
 .nav-menu-link {
-    color: #fff;
+    color: var(--color-text);
     text-decoration: none;
     padding: 8px 12px;
     display: flex;
@@ -56,8 +57,8 @@ nav {
 }
 
 .logo {
-    width: 10em;
-    margin: 0 50px;
+    width: 8em;
+    margin: 5px 50px;
 }
 
 img {
@@ -96,90 +97,65 @@ img {
     display: none;
 }
 
-#checkbox {
-    display: none;
-}
-
-.toggler {
+span {
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     display: block;
-    width: 60px;
-    height: 31px;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    position: relative;
-    cursor: pointer;
-}
-
-.ball, .sun, .moon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.ball {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: #fff;
-    border-radius: 50%;
-    left: 1px;
-    z-index: 10;
-    transition: transform .5s ease-in-out;
-}
-
-.sun {
-    left: 5px;
-    color: #fff;
-}
-
-.moon {
-    right: 5px;
-    color: #fff;
-}
-
-#checkbox:checked + .ball {
-    transform: translate(29px, -50%);
+    background: none;
 }
 
 main {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+/* Section Inicio */
+
+h1 {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    color: var(--color-title);
 }
 
 h2 {
-    font-size: 3em;
-    text-align: center;
-    color: #dfeb35;
+    font-size: 2em;
+    font-weight: bold;
     font-family: 'Bebas Neue', cursive;
+    margin-bottom: 30px;
+    color: var(--color-title);
 }
 
-#titulo{
-    margin-top: 20px;
+h4 {
+    font-size: 1.2em;
+    color: #fff;
 }
 
 section {
-    width: 100%;
-    height: 100vh;
+    width: 90%;
+    height: 90vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
-.banners{
-    margin-top: 30px;
+
+.banners {
     display: flex;
-    align-items: flex-start;
 }
+
 .slider {
     width: 80vw;
     height: 70vh;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: -10px 10px 70px 10px #3f0071;
+    box-shadow: -1px 1px 100px 1px hsl(305, 83%, 56%);
 }
 
 .slides {
@@ -224,7 +200,7 @@ section {
 }
 
 .manual-btn:hover {
-    background: #3f0071;
+    background: hsl(273, 100%, 22%);
 }
 
 #radio1:checked ~ .first {
@@ -278,20 +254,29 @@ section {
     transition: 1s;
 }
 
+/* scroll bar */
+
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
     height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #f7f31c, #ebb135);
+    background: linear-gradient(to bottom, hsl(59, 93%, 54%), hsl(41, 82%, 56%));
     border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track {
     background: #303030;
 }
-/*CSS de la parte de Productos*/
+
+/* Section Quienes Somos */
+#Quienes-somos {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Section Productos */
 #Productos {
     display: flex;
     flex-direction: column;
@@ -307,16 +292,18 @@ section {
     padding: 20px;
     justify-content: center;
     align-items: center;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
     position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 12px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid none;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 2px 5px 10px 2px var(--color-detail);
 }
 
 .card div {
@@ -327,17 +314,16 @@ section {
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
-    transition: 1s;
+    transition: 1.5s;
     border-radius: 20px 0 20px 0;
 }
 
 .card .front {
-    background-color: #3f0071;
     transform: perspective(500px) rotateY(0deg);
 }
 
 .card .back {
-    background-color: #b883e3;
+    background-color: var(--color-principal);
     transform: perspective(500px) rotateY(180deg);
 }
 
@@ -349,30 +335,29 @@ section {
     transform: perspective(500px) rotateY(360deg);
 }
 
-
-/*CSS de la parte de donde estamos*/
-#Donde-estamos{
+/* Donde estamos */
+#Donde-estamos {
     flex-direction: column;
     align-items: center;
 }
 
-/*CSS de la parte de contacto*/
-.contacto .container{
+/* Contacto */
+.contacto .container {
     text-align: center;
     width: 100%;
 }
 
-form{
-    /*se rompia con el viewportwidth */
+form {
     width: 90%;
     margin: auto;
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 10px;
-    
+    background-color: var(--color-principal);
+    border-radius: 10px;
 }
 
-input, textarea{
+input, textarea {
     width: 100%;
     margin-top: 10px;
     padding: 7px;
@@ -384,25 +369,26 @@ input, textarea{
     border-radius: 5px; 
 }
 
-textarea{
+textarea {
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
 }
 
-#botonContacto{
-    background-color:#dfeb35;
-    color: #020A19;
+#botonContacto {
+    background-color:hsl(64, 82%, 56%);
+    color: var(--color-principal);
     font-weight: bold;
     padding: 10px;
     border-radius: 5px;
 }
-#botonContacto:hover{
+
+#botonContacto:hover {
     cursor: pointer;
 }
 
-#Contacto i{
-    color: #dfeb35;
+#Contacto i {
+    color: hsl(64, 82%, 56%);
     font-size: 3em;
     margin: 12px;
 }
@@ -415,7 +401,7 @@ textarea{
     .menu {
         flex-direction: column;
         margin-right: 20px;
-        background: var(--header-color1);
+        background: var(--color-menuresponsive);
         position: fixed;
         left: 0;
         top: 80px;
@@ -428,14 +414,14 @@ textarea{
     }
 
     .nav-menu {
-        font-size: 1.5em;
+        font-size: 1.3em;
         padding: 5px;
         margin: 5px;
     }
 
     .nav-menu-link:hover {
         background: none;
-        color: #dfeb35;
+        color: hsl(64, 100%, 50%);
     }
 
     .btn {
@@ -445,10 +431,4 @@ textarea{
     .menu_visible {
         left: 0;
     }
-    
-    #Productos .container {
-        gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
 }
